@@ -1,0 +1,33 @@
+.line::after {
+  border-color: #ff9100 !important;
+}
+
+.inp label {
+  color: rgba(255, 255, 255, 0.555);
+
+}
+
+
+.white {
+  color: white !important;
+}
+
+.white fieldset {
+  transition: all 0.15s;
+  border-color: rgb(87, 85, 87) ;
+  border-width: 2px;
+}
+
+
+.main_tabs {
+  padding: 12px 24px 0px 24px; 
+  background: #e5e5e5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main_tabs span.MuiTabs-indicator {
+  border-color: #1d1d1d !important; 
+  background-color: #1d1d1d !important ;
+}

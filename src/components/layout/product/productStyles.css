@@ -1,0 +1,56 @@
+.basket {
+  padding: 13px 16px 20px;
+  background-color: #fff0db;
+  width: 100%;
+}
+
+.basket_title {
+  text-align: center;
+  margin: 20px 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.basket_body {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout_button {
+  display: block;
+  width: 100%;
+
+  background-color: #e4661e;
+  border: 1px solid #e4661e;
+  color: #fff;
+
+  margin-top: 22px;
+  font-size: 18px;
+
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  display: inline-block;
+  outline: none;
+  box-shadow: none;
+
+  transition: all .2s;
+  cursor: pointer;
+  padding: 11px 20px;
+  height: 50px;
+  text-transform: uppercase;
+
+}
+
+.checkout_button:hover {
+  opacity: 0.8;
+}
+
+.hr {
+  margin: 14px 0;
+  border-top-color: #1d1d1d;
+  height: 1px;
+}

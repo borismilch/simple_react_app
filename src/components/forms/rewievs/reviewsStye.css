@@ -1,0 +1,44 @@
+.rev_form {
+  position: relative;
+  padding: 20px 26px;
+
+  border: 1px solid #e5e5e5;
+  background-color: white;
+  color: #1d1d1d;
+  text-decoration: none;
+  outline: none;
+
+  transition: all .2s;
+}
+
+.rev_form__title {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.btn_message {
+  height: 40px;
+  border: 1px solid #f0ad4e;
+
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #f0ad4e;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 25px;
+  
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.btn_message:hover{
+  border-color: #ffd25d;
+  opacity: .8;
+}

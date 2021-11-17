@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  background: #1d1d1d !important;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid #ff9100;
+ 
+}
+
+.headerTab {
+  padding: 0px !important;
+  min-width: 50px !important;
+}
+.css-1aquho2-MuiTabs-indicator {
+  background-color: #ff9100 !important;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.go_back {
+  color: #fff;
+  text-transform: none;
+  margin: 0px 12px 0px 5px;
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  text-decoration: none;
+}

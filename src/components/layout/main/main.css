@@ -1,0 +1,28 @@
+.parent {
+  width: 100%; 
+  height: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.image {
+  object-fit: cover; 
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.flex_col {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}

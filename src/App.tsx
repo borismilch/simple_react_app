@@ -1,57 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import SnackBar  from './components/forms/SnackBar';
+import Header from './components/layout/header/Header';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HomePage, DishPage, AuthPage, RegisterPage } from './components/pages/';
+import RouteGuard from './components/pure/RouteGuard'
+import { ConnectedRouter } from 'connected-react-router'
+import { history } from './redux/store'
+import CheckoutPage from './components/pages/CheckoutPage';
+
+import { ThankYou } from './components/pages/ThankYou';
+
+import ProductPage from './components/pages/ProductPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <ConnectedRouter history={history}>
+
+      <Header />
+
+       <SnackBar />
+      
+      <Switch >
+        
+        <Route path='/' exact render={() => (<RouteGuard><HomePage /></RouteGuard>)} />
+        
+        <Route path='/dish'  render={() => (<RouteGuard><DishPage /></RouteGuard>)} />
+
+        <Route path='/product/:id' 
+          render={() => <RouteGuard> <ProductPage /> </RouteGuard>}
+        />
+
+        <Route path='/checkout' 
+          render={() => <RouteGuard> <CheckoutPage /> </RouteGuard>}
+        />
+
+        <Route path='/thankyou' 
+          render={() => <RouteGuard> <ThankYou /> </RouteGuard>}
+        />
+     
+        <Route path='/auth' exact component={AuthPage} />
+    
+        <Route path='/register' component={RegisterPage} />
+
+      </Switch>
+
+    </ConnectedRouter>
+   
   );
 }
 
