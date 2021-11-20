@@ -1,2 +1,1 @@
-## link: https://app.netlify.com/sites/silly-mestorf-72870a/overview
-
+## link: https://silly-mestorf-72870a.netlify.app
